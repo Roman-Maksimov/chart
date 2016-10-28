@@ -1,0 +1,63 @@
+a {
+  color: $color_blue;
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+input,
+select {
+  height: 25px;
+  padding: 0 5px;
+  border: 1px solid $color_input_border;
+  color: $color_font;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  border-radius: $input_border_radius;
+}
+
+.button {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: $color_blue2;
+  color: #fff;
+  vertical-align: middle;
+
+  border-radius: $input_border_radius;
+}
+
+.close {
+  left: -2px;
+  color: $color_button_red;
+  cursor: pointer;
+}
+
+
+/* Checkbox*/
+
+.mdl-checkbox__box-outline {
+  border-color: $color_font;
+}
+
+.mdl-checkbox {
+  height: auto;
+
+  &.is-checked {
+    .mdl-checkbox__box-outline {
+      border-color: $color_blue;
+    }
+    .mdl-checkbox__tick-outline {
+      background-color: $color_blue;
+    }
+  }
+}

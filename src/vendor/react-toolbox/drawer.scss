@@ -1,0 +1,8 @@
+@import "~react-toolbox/lib/drawer/theme";
+@import "~react-toolbox/lib/drawer/_config";
+
+$drawer-width: 300px;
+
+.drawer {
+  width: $drawer-width;
+}

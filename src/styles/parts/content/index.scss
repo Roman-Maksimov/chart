@@ -1,0 +1,6 @@
+.content {
+  max-width: $width;
+  margin: 0 auto;
+
+  @import "chart";
+}

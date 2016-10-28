@@ -1,0 +1,62 @@
+$font_family: Roboto, 'Open Sans', Arial;
+$font_size: 14px;
+$img: "../img/";
+$icons: $img + "icons/";
+
+$color_font: #363636;
+$color_blue: #5ea5de;
+$color_blue2: #5aa0db;
+$color_border: #cbcbcb;
+$color_input_border: #b1b1b1;
+$color_button_green: #8dbc39;
+$color_button_red: #cf463b;
+$color_background: #00a1de;
+
+$width: 1024px;
+$topHeight: 90px;
+
+$input_border_radius: 2px;
+$input_border_radius_sm: 4px;
+
+$contentHeaderHeight: 47px;
+$contentHeaderHeight2: 40px;
+$contentLeftWidth: 192px;
+$contentLeftMargin: 42px;
+
+$screenSmWidth: 768px;
+$screenMdWidth: 992px;
+$screenLgWidth: 1200px;
+
+@import "include/functions";
+@import "include/keyframes";
+
+body { padding: 0; margin: 0; min-height: unset; font: $font_size $font_family; color: $color_font;}
+
+h1	{ font-size: 220%; font-weight: bold; margin-bottom: 20px;}
+h2	{ font-size: 190%; font-weight: bold; margin-bottom: 15px;}
+h3	{ font-size: 150%; font-weight: bold; margin-bottom: 10px;}
+h4	{ font-size: 100%; font-weight: bold; margin-bottom: 5px; margin-left: 10px;}
+h5	{ font-size: 100%; font-weight: bold; margin-bottom: 5px; margin-left: 20px;}
+h6	{ font-size: 100%; font-weight: bold; margin-bottom: 5px; margin-left: 30px;}
+
+#app {
+  margin-top: $topHeight;
+}
+
+.aligner {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  line-height: 1.2;
+
+  &.empty {
+    height: 100%;
+  }
+}
+
+ul {
+  -webkit-padding-start: 0;
+}
+
+@import "material";
+@import "parts/content/index";

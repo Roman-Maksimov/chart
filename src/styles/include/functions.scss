@@ -1,0 +1,33 @@
+@mixin background-gradient($start_color, $stop_color){
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.5, $start_color),
+		color-stop(1, $stop_color)
+	);
+	background-image: -o-linear-gradient(bottom, $start_color 50%, $stop_color 100%);
+	background-image: -moz-linear-gradient(bottom, $start_color 50%, $stop_color 100%);
+	background-image: -webkit-linear-gradient(bottom, $start_color 50%, $stop_color 100%);
+	background-image: -ms-linear-gradient(bottom, $start_color 50%, $stop_color 100%);
+	background-image: linear-gradient(to bottom, $start_color 50%, $stop_color 100%);
+}
+
+@mixin align-center($width){
+	position: absolute;
+	width: $width;
+	margin-left: -($width/2);
+	left: 50%;
+}
+
+@mixin valign-middle($height){
+	position: absolute;
+	min-height: $height;
+	margin-top: -($height/2);
+	top: 50%;
+}
+
+@mixin align-center-middle($width, $height){
+	@include align-center($width);
+	@include valign-middle($height);
+}

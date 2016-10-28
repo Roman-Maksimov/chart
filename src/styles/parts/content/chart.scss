@@ -1,0 +1,38 @@
+.chart {
+    &__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: 600;
+
+        &-currency {
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    &__isin {
+        font-size: 18px;
+    }
+
+    &__description {
+        font-size: 20px;
+    }
+
+    &__tabs {
+        margin: 20px 0 40px;
+    }
+
+    &__types {
+        width: 200px;
+    }
+
+    &__types-item {
+        height: 3.84rem;
+        line-height: 3.84rem;
+        font-size: 26px;
+
+        .material-icons {
+            color: #3f51b5;
+        }
+    }
+}
